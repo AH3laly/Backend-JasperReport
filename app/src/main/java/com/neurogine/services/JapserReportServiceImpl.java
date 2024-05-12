@@ -165,4 +165,17 @@ public class JapserReportServiceImpl implements JapserReportService {
         JasperCompileManager.writeReportToXmlFile(jasperReport , destFileName);
 	}
 
+	public void exportPdf(String filePath) throws JRException {
+		JasperReport jasperReport = JasperCompileManager.compileReport(jasperDesign);
+        
+        JasperPrint jasperPrint;
+        Map<String, Object> parameters = new HashMap<String, Object>();
+        if(dataSource != null) {
+        	jasperPrint =  JasperFillManager.fillReport(jasperReport, parameters, dataSource);
+        } else {
+        	jasperPrint =  JasperFillManager.fillReport(jasperReport, parameters);
+        }
+        
+        JasperExportManager.exportReportToPdfFile(jasperPrint, filePath);
+	}
 }
