@@ -8,6 +8,8 @@ import com.neurogine.models.ReportDocumentField;
 import net.sf.jasperreports.engine.JRDataSource;
 import net.sf.jasperreports.engine.JRException;
 import net.sf.jasperreports.engine.JRLineBox;
+import net.sf.jasperreports.engine.JasperCompileManager;
+import net.sf.jasperreports.engine.JasperReport;
 import net.sf.jasperreports.engine.design.JRDesignBand;
 import net.sf.jasperreports.engine.design.JRDesignExpression;
 import net.sf.jasperreports.engine.design.JRDesignField;
@@ -156,6 +158,11 @@ public class JapserReportServiceImpl implements JapserReportService {
         lineBox.getPen().setLineWidth(Float.MIN_NORMAL);
         lineBox.getPen().setLineColor(Color.BLACK);
         lineBox.setPadding(5);
+	}
+	
+	public void generateJrxml(String destFileName) throws JRException {
+		JasperReport jasperReport = JasperCompileManager.compileReport(jasperDesign);
+        JasperCompileManager.writeReportToXmlFile(jasperReport , destFileName);
 	}
 
 }
