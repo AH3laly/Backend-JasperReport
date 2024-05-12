@@ -1,6 +1,8 @@
 package com.neurogine.services;
 
 import java.awt.Color;
+import java.util.HashMap;
+import java.util.Map;
 
 import com.neurogine.models.ReportDocument;
 import com.neurogine.models.ReportDocumentField;
@@ -9,6 +11,9 @@ import net.sf.jasperreports.engine.JRDataSource;
 import net.sf.jasperreports.engine.JRException;
 import net.sf.jasperreports.engine.JRLineBox;
 import net.sf.jasperreports.engine.JasperCompileManager;
+import net.sf.jasperreports.engine.JasperExportManager;
+import net.sf.jasperreports.engine.JasperFillManager;
+import net.sf.jasperreports.engine.JasperPrint;
 import net.sf.jasperreports.engine.JasperReport;
 import net.sf.jasperreports.engine.design.JRDesignBand;
 import net.sf.jasperreports.engine.design.JRDesignExpression;
