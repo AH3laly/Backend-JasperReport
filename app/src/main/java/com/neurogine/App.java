@@ -1,5 +1,6 @@
 package com.neurogine;
 
+import java.math.BigDecimal;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -45,7 +46,7 @@ public class App {
     	List<ReportDocumentField> fieldsList = new ArrayList<>();
     	fieldsList.add(new ReportDocumentField("date", "java.lang.String", "Date"));
     	fieldsList.add(new ReportDocumentField("referenceno", "java.lang.String", "Reference No"));
-    	fieldsList.add(new ReportDocumentField("amount", "java.lang.String", "Amount"));
+    	fieldsList.add(new ReportDocumentField("amount", "java.math.BigDecimal", "Amount"));
     	fieldsList.add(new ReportDocumentField("status", "java.lang.String", "Status"));
     	fieldsList.add(new ReportDocumentField("remark", "java.lang.String", "Remark"));
     	
@@ -56,10 +57,10 @@ public class App {
 
     	List<PdfReportRow> tableData = new ArrayList<PdfReportRow>();
         PdfReportRow row;
-        for(int i =0; i < 5; i++) {
+        for(int i =0; i < 100; i++) {
         	String indexString = String.valueOf(i + 1);
         	row = new PdfReportRow();
-        	row.setAmount("10.2");
+        	row.setAmount(BigDecimal.valueOf(10.2));
         	row.setDate("2024-11-10");
         	row.setReferenceno("54877" + indexString);
         	row.setStatus("Active");

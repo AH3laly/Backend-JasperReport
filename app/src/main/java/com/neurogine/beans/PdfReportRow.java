@@ -1,11 +1,13 @@
 package com.neurogine.beans;
 
+import java.math.BigDecimal;
+
 public class PdfReportRow {
 
 	private Integer id;
 	private String date;
 	private String referenceno;
-	private String amount;
+	private BigDecimal amount;
 	private String status;
 	private String remark;
 	
@@ -27,10 +29,10 @@ public class PdfReportRow {
 	public void setReferenceno(String referenceno) {
 		this.referenceno = referenceno;
 	}
-	public String getAmount() {
+	public BigDecimal getAmount() {
 		return amount;
 	}
-	public void setAmount(String amount) {
+	public void setAmount(BigDecimal amount) {
 		this.amount = amount;
 	}
 	public String getStatus() {
