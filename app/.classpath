@@ -8,12 +8,37 @@
 	</classpathentry>
 	<classpathentry kind="src" output="bin/test" path="src/test/java">
 		<attributes>
+			<attribute name="test" value="true"/>
 			<attribute name="gradle_scope" value="test"/>
 			<attribute name="gradle_used_by_scope" value="test"/>
-			<attribute name="test" value="true"/>
 		</attributes>
 	</classpathentry>
-	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-17/"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-17/">
+		<attributes>
+			<attribute name="module" value="true"/>
+		</attributes>
+	</classpathentry>
 	<classpathentry kind="con" path="org.eclipse.buildship.core.gradleclasspathcontainer"/>
+	<classpathentry kind="lib" path="/home/store/Study/Preparation/neurogine.com/Backend-JasperReport-Final/Backend-JasperReport/app/libs/commons-collections4-4.2.jar"/>
+	<classpathentry kind="lib" path="/home/store/Study/Preparation/neurogine.com/Backend-JasperReport-Final/Backend-JasperReport/app/libs/jasperreports-6.3.0.jar"/>
+	<classpathentry kind="lib" path="/home/store/Study/Preparation/neurogine.com/Backend-JasperReport-Final/Backend-JasperReport/app/libs/jasperreports-fonts-6.3.0.jar"/>
+	<classpathentry kind="lib" path="/home/store/Study/Preparation/neurogine.com/Backend-JasperReport-Final/Backend-JasperReport/app/libs/jasperreports-functions-6.3.0.jar"/>
+	<classpathentry kind="lib" path="/home/store/Study/Preparation/neurogine.com/Backend-JasperReport-Final/Backend-JasperReport/app/libs/itext-2.1.7.js6.jar"/>
+	<classpathentry kind="lib" path="/home/store/Study/Preparation/neurogine.com/Backend-JasperReport-Final/Backend-JasperReport/app/libs/joda-time-2.12.7.jar"/>
+	<classpathentry kind="lib" path="/home/store/Study/Preparation/neurogine.com/Backend-JasperReport-Final/Backend-JasperReport/app/libs/commons-collections4-4.5.0-M1.jar"/>
+	<classpathentry kind="lib" path="/home/store/Study/Preparation/neurogine.com/Backend-JasperReport-Final/Backend-JasperReport/app/libs/beanio-2.1.0.jar"/>
+	<classpathentry kind="lib" path="/home/store/Study/Preparation/neurogine.com/Backend-JasperReport-Final/Backend-JasperReport/app/libs/openpdf-1.3.26.jar"/>
+	<classpathentry kind="lib" path="/home/store/Study/Preparation/neurogine.com/Backend-JasperReport-Final/Backend-JasperReport/app/libs/jsr305-3.0.2.jar"/>
+	<classpathentry kind="lib" path="/home/store/Study/Preparation/neurogine.com/Backend-JasperReport-Final/Backend-JasperReport/app/libs/org.mortbay.jasper.apache-jsp_9.0.83.jar"/>
+	<classpathentry kind="lib" path="/home/store/Study/Preparation/neurogine.com/Backend-JasperReport-Final/Backend-JasperReport/app/libs/org.mortbay.jasper.apache-el_9.0.83.jar"/>
+	<classpathentry kind="lib" path="/home/store/Study/Preparation/neurogine.com/Backend-JasperReport-Final/Backend-JasperReport/app/libs/org.eclipse.equinox.jsp.jasper_1.2.0.v20240213-1427.jar"/>
+	<classpathentry kind="lib" path="/home/store/Study/Preparation/neurogine.com/Backend-JasperReport-Final/Backend-JasperReport/app/libs/org.eclipse.equinox.jsp.jasper.registry_1.3.0.v20240213-1427.jar"/>
+	<classpathentry kind="lib" path="/home/store/Study/Preparation/neurogine.com/Backend-JasperReport-Final/Backend-JasperReport/app/libs/com.lowagie.text-2.1.7.jar"/>
+	<classpathentry kind="lib" path="/home/store/Study/Preparation/neurogine.com/Backend-JasperReport-Final/Backend-JasperReport/app/libs/commons-collections-3.2.1-1.0.0.jar"/>
+	<classpathentry kind="lib" path="/home/store/Study/Preparation/neurogine.com/Backend-JasperReport-Final/Backend-JasperReport/app/libs/commons-digester3-3.2-javadoc.jar"/>
+	<classpathentry kind="lib" path="/home/store/Study/Preparation/neurogine.com/Backend-JasperReport-Final/Backend-JasperReport/app/libs/commons-digester3-3.2-sources.jar"/>
+	<classpathentry kind="lib" path="/home/store/Study/Preparation/neurogine.com/Backend-JasperReport-Final/Backend-JasperReport/app/libs/commons-digester3-3.2-with-deps.jar"/>
+	<classpathentry kind="lib" path="/home/store/Study/Preparation/neurogine.com/Backend-JasperReport-Final/Backend-JasperReport/app/libs/commons-digester3-3.2.jar"/>
+	<classpathentry kind="lib" path="/home/store/Study/Preparation/neurogine.com/Backend-JasperReport-Final/Backend-JasperReport/app/libs/commons-digester-2.1.jar"/>
 	<classpathentry kind="output" path="bin/default"/>
 </classpath>
